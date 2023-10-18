@@ -1,6 +1,11 @@
 #panel{
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+.color{
+    display: flex;
+    margin-bottom: 5px;
 }
 .colorWorkPanel {
     display: flex;
@@ -11,4 +16,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.palette {
+    height: 40vh !important;
 }
