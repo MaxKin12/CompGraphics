@@ -1,0 +1,14 @@
+#panel{
+    display: grid;
+    align-items: center;
+}
+.colorWorkPanel {
+    display: flex;
+    flex-flow: column wrap;
+}
+#palette{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
