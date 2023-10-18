@@ -13,41 +13,61 @@
     <div id="panel">
         <div class="colorWorkPanel">
             <div>
-                <label for="number_r">R: </label><input type="number" id="number_r" min="0" max="255" value="0" onkeyup="numberChanged('r')"/>
-                <input type="range" id="range_r" min="0" max="255" value="0" step="1" oninput="rangeChanged('r')"/>
-                <label for="number_g">G: </label><input type="number" id="number_g" min="0" max="255" value="0" onkeyup="numberChanged('g')"/>
-                <input type="range" id="range_g" min="0" max="255" value="0" step="1" oninput="rangeChanged('g')"/>
-                <label for="number_b">B: </label><input type="number" id="number_b" min="0" max="255" value="0" onkeyup="numberChanged('b')"/>
-                <input type="range" id="range_b" min="0" max="255" value="0" step="1" oninput="rangeChanged('b')"/>
+                <label class="color">RGB model</label>
+                <div class="color">
+                    <label for="number_r">R: </label><input type="number" id="number_r" min="0" max="255" value="0" onkeyup="numberChanged('r')"/>
+                    <input type="range" id="range_r" min="0" max="255" value="0" step="1" oninput="rangeChanged('r')"/>
+                </div>
+                <div class="color">
+                    <label for="number_g">G: </label><input type="number" id="number_g" min="0" max="255" value="0" onkeyup="numberChanged('g')"/>
+                    <input type="range" id="range_g" min="0" max="255" value="0" step="1" oninput="rangeChanged('g')"/>
+                </div>
+                <div class="color">
+                    <label for="number_b">B: </label><input type="number" id="number_b" min="0" max="255" value="0" onkeyup="numberChanged('b')"/>
+                    <input type="range" id="range_b" min="0" max="255" value="0" step="1" oninput="rangeChanged('b')"/>
+                </div>
             </div>
         </div>
         <div class="colorWorkPanel">
             <div>
-                <label for="number_c">C: </label><input type="number" id="number_c" min="0" max="100" value="0" onkeyup="numberChanged('c')"/>
-                <input type="range" id="range_c" min="0" max="100" value="0" step="1" oninput="rangeChanged('c')"/>
-                <label for="number_m">M: </label><input type="number" id="number_m" min="0" max="100" value="0" onkeyup="numberChanged('m')"/>
-                <input type="range" id="range_m" min="0" max="100" value="0" step="1" oninput="rangeChanged('m')"/>
-                <label for="number_y">Y: </label><input type="number" id="number_y" min="0" max="100" value="0" onkeyup="numberChanged('y')"/>
-                <input type="range" id="range_y" min="0" max="100" value="0" step="1" oninput="rangeChanged('y')"/>
-                <label for="number_k">K: </label><input type="number" id="number_k" min="0" max="100" value="0" onkeyup="numberChanged('k')"/>
-                <input type="range" id="range_k" min="0" max="100" value="0" step="1" oninput="rangeChanged('k')"/>
+                <label class="color">CMYK model</label>
+                <div class="color">
+                    <label for="number_c">C: </label><input type="number" id="number_c" min="0" max="100" value="0" onkeyup="numberChanged('c')"/>
+                    <input type="range" id="range_c" min="0" max="100" value="0" step="1" oninput="rangeChanged('c')"/>
+                </div>
+                <div class="color">
+                    <label for="number_m">M: </label><input type="number" id="number_m" min="0" max="100" value="0" onkeyup="numberChanged('m')"/>
+                    <input type="range" id="range_m" min="0" max="100" value="0" step="1" oninput="rangeChanged('m')"/>
+                </div>
+                <div class="color">
+                    <label for="number_y">Y: </label><input type="number" id="number_y" min="0" max="100" value="0" onkeyup="numberChanged('y')"/>
+                    <input type="range" id="range_y" min="0" max="100" value="0" step="1" oninput="rangeChanged('y')"/>
+                </div>
+                <div class="color">
+                    <label for="number_k">K: </label><input type="number" id="number_k" min="0" max="100" value="0" onkeyup="numberChanged('k')"/>
+                    <input type="range" id="range_k" min="0" max="100" value="0" step="1" oninput="rangeChanged('k')"/>
+                </div>
             </div>
         </div>
         <div class="colorWorkPanel">
             <div>
-                <label for="number_h">H: </label><input type="number" id="number_h" min="0" max="360" value="0" onkeyup="numberChanged('h')"/>
-                <input type="range" id="range_h" min="0" max="360" value="0" step="1" oninput="rangeChanged('h')"/>
-                <label for="number_l">L: </label><input type="number" id="number_l" min="0" max="100" value="0" onkeyup="numberChanged('l')"/>
-                <input type="range" id="range_l" min="0" max="100" value="0" step="1" oninput="rangeChanged('l')"/>
-                <label for="number_s">S: </label><input type="number" id="number_s" min="0" max="100" value="0" onkeyup="numberChanged('s')"/>
-                <input type="range" id="range_s" min="0" max="100" value="0" step="1" oninput="rangeChanged('s')"/>
+                <label class="color">HLS model</label>
+                <div class="color">
+                    <label for="number_h">H: </label><input type="number" id="number_h" min="0" max="360" value="0" onkeyup="numberChanged('h')"/>
+                    <input type="range" id="range_h" min="0" max="360" value="0" step="1" oninput="rangeChanged('h')"/>
+                </div>
+                <div class="color">
+                    <label for="number_l">L: </label><input type="number" id="number_l" min="0" max="100" value="0" onkeyup="numberChanged('l')"/>
+                    <input type="range" id="range_l" min="0" max="100" value="0" step="1" oninput="rangeChanged('l')"/>
+                </div>
+                <div class="color">
+                    <label for="number_s">S: </label><input type="number" id="number_s" min="0" max="100" value="0" onkeyup="numberChanged('s')"/>
+                    <input type="range" id="range_s" min="0" max="100" value="0" step="1" oninput="rangeChanged('s')"/>
+                </div>
             </div>
         </div>
 
-        <div id="palette">
-
-        </div>
-
+        <div id="palette" class="palette"></div>
         </div>
     </div>
 
