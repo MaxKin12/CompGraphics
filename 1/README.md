@@ -1,1 +1,1 @@
-* Color models
+# Color models
