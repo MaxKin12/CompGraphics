@@ -1,4 +1,4 @@
-# Color models
+# Color Models
 ### Средства разработки
 HTML, CSS, JavaScript
 ### Возможности проекта
