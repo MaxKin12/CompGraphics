@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>Raster Algorithms</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="root">
+        <div class="canv" style="position: relative;">
+            <canvas id="layer1" width="600" height="600"
+                style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+            <canvas id="layer2" width="600" height="600"
+                style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+        </div>
+        <div class="parametrWrapper">
+            <div class="algorithm">
+                <h3>Algorithm:</h3>
+                <div class="input-wrapper">
+                    <input class="alg" type="radio" id="stepByStep" name="algorithm" value="stepByStep">
+                    <label for="stepByStep">Step-by-step algorithm</label><br>
+                </div>
+                <div class="input-wrapper">
+                    <input class="alg" type="radio" id="bresenham" name="algorithm" value="bresenham" checked>
+                    <label for="bresenham">Bresenham's algorithm</label><br>
+                </div>
+            </div>
+            <div class="scale">
+                <h3>Scale:</h3>
+                <div class="input-wrapper">
+                    <input class="sc" type="radio" id="scale1" name="scale" value="10" checked>
+                    <label for="scale1">60x60</label><br>
+                </div>
+                <div class="input-wrapper">
+                    <input class="sc" type="radio" id="scale2" name="scale" value="5">
+                    <label for="scale2">120x120</label><br>
+                </div>
+                <div class="input-wrapper">
+                    <input class="sc" type="radio" id="scale3" name="scale" value="2">
+                    <label for="scale3">300x300</label><br>
+                </div>
+                <div class="input-wrapper">
+                    <input class="sc" type="radio" id="scale4" name="scale" value="1">
+                    <label for="scale4">600x600</label><br>
+                </div>
+            </div>
+            <div class="coords">
+                <h3>Coordinates:</h3>
+                <div class="coordsWrapper">
+                    <div>
+                        <h5>Point A(x,y)</h5>
+                        <div class="pointInput">
+                            <input id="xStart" type="number" placeholder="X start" value="0" />
+                            <input id="yStart" type="number" placeholder="Y start" value="0" />
+                        </div>
+                    </div>
+                    <div>
+                        <h5>Point B(x,y)</h5>
+                        <div class="pointInput">
+                            <input id="xEnd" type="number" placeholder="X end" value="20" />
+                            <input id="yEnd" type="number" placeholder="Y end" value="20" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="button" onclick="start()">Draw</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
